@@ -1,0 +1,58 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: hidden;}
+
+.container-web{
+    display: flex;
+    height: 100%;}
+
+.left-column, .right-column {
+    flex: 1;}
+
+.left-column {
+    padding: 10px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;}
+
+.right-column {
+    padding: 25px;
+    display: flex;
+    background-color: white;
+    justify-content: center;}
+
+.container{
+    height: auto;
+    max-width: 500px;
+    margin: 25px auto;
+    transform: translate(0%, 45%);
+    background-color: #fff;
+    padding: 20px;}
+
+#main{
+    color: #072C70;
+    text-decoration: none;}
+
+#main:hover{
+    text-decoration: underline;
+    cursor: pointer;}
+
+#trademark{
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #072C70;
+    font-size: 50px;}
+
+#trademark-info{
+    transform: translate(2%, 21%);
+    font-family: "Fira Sans", sans-serif;
+    font-style: normal;
+    font-size: 22px;}
+
+@media (max-width: 600px) {
+    .form-group.row {
+        grid-template-columns: 1fr;}}

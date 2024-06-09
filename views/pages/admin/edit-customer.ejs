@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Edit Customer</title>
+            <link rel="website icon" type="png" href="..\photos\tiny-trademark.png">
+            <link rel="stylesheet" href="/css/admin/edit-customer.css">
+        </head>
+        <body>
+            <h1>EDIT CUSTOMERS</h1>
+            <form action="/edit-customer/<%= customer.ClienteID %>" method="POST" class="container">
+                <div class="form-group row">
+                    <input type="hidden" id="clienteID" name="clienteID" value="<%= customer.ClienteID %>"autocomplete="off" required>
+                </div>
+                <div class="form-group row">
+                    <input type="text" id="name" name="name" value="<%= customer.Nombre %>" placeholder="Name" autocomplete="off" required>
+                    <input type="text" id="surname" name="surname" value="<%= customer.Apellido %>" placeholder="Surname" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="<%= customer.Email %>" placeholder="Email" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" value="<%= customer.Telefono %>" placeholder="Phone Number" autocomplete="off" required>
+                    <label for="address">Address:</label>
+                </div>
+                <div class="form-group">
+                    <div class="form-group row">
+                        <input type="text" id="country" name="country" value="<%= customer.Pais %>" placeholder="Country" autocomplete="off" required>
+                        <input type="text" id="address" name="address" value="<%= customer.Direccion %>" placeholder="Address" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <input type="text" id="city" name="city" value="<%= customer.Ciudad %>" placeholder="City" autocomplete="off" required>
+                    <input type="text" id="zipcode" name="zipcode" value="<%= customer.CodigoPostal %>" placeholder="Zip Code" autocomplete="off" required>
+                </div>
+                <div class="form-group button">
+                    <button type="button" id="returnButton">Return</button>
+                    <button type="submit">Save Changes</button>
+                </div>
+            </form>
+            <script>
+                document.getElementById('returnButton').addEventListener('click', function() {
+                    window.history.back();
+                });
+            </script>
+        </body>
+    </html>

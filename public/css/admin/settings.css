@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #072C70;
+}
+
+#admin-email {
+    font-size: 18px;
+    margin-bottom: 20px;}
+
+.container-settings{
+    height: auto;
+    margin: 20px auto;
+    max-width: 500px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+
+.button-container {
+    margin-top: 20px;}
+
+.button-container button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #072C70;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;}
+
+.button-container button:hover {
+    background-color: #051d49;}

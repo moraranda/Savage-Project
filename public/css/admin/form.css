@@ -1,0 +1,74 @@
+body{
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #072C70;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;}
+
+.container {
+    margin: 100px;
+    height: auto;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;}
+
+#image-container{
+    width: 240px;
+    height: 60px;}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;}
+
+.form-group {
+    margin-bottom: 20px;}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 10px;}
+
+.form-group.button {
+    text-align: center;}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-bottom: 10px;}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #072C70;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;}
+
+input[type="submit"]:hover {
+    background-color: #051d49;}
+
+@media (max-width: 600px) {
+    .form-group.row {
+        grid-template-columns: 1fr;}
+
+    .form-group.row input {
+        width: 100%;}
+}

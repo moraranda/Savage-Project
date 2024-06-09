@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Edit Order</title>
+            <link rel="website icon" type="png" href="..\photos\tiny-trademark.png">
+            <link rel="stylesheet" href="/css/admin/edit-order.css">
+        </head>
+        <body>
+            <h1>EDIT ORDER</h1>
+            <form action="/edit-order/<%= order.PedidoID %>" method="POST" class="container">
+                <div class="form-group row">
+                    <input type="hidden" id="pedidoID" name="pedidoID" value="<%= order.PedidoID %>"autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Status:</label>
+                    <input type="text" id="status" name="status" value="<%= order.Estado %>" placeholder="Status" autocomplete="off" required>
+                </div>
+                <div class="form-group button">
+                    <button type="button" id="returnButton">Return</button>
+                    <button type="submit">Save Changes</button>
+                </div>
+            </form>
+            <script>
+                document.getElementById('returnButton').addEventListener('click', function() {
+                    window.history.back();
+                });
+            </script>
+        </body>
+    </html>
